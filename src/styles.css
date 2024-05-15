@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.subtle-filter {
+    position: relative;
+    overflow: hidden;
+}
+
+.subtle-filter:before {
+    content: " ";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.2); /* Adjust the opacity as needed */
+    pointer-events: none;
+}
+
+.n_grid {
+    display: flex;
+    flex-wrap: wrap;
+}
+.n_grid > * {
+    width: calc(50% - 20px); /* Adjust width as needed */
+    margin: 10px;
+    flex: 1 1 auto;
+}
