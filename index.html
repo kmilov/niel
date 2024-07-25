@@ -1,1 +1,40 @@
-<h1>Nield</h1>
+<!doctype html>
+<html>
+<head>
+    <title>NIELDEBAMBOLINA</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="output.css" />
+    <script src="https://unpkg.com/htmx.org@1.9.12"
+        integrity="sha384-ujb1lZYygJmzgSwoxRggbCHcjc0rB2XoQrxeTUQyRjrOnlCoYta87iKBWq3EsdM2"
+        crossorigin="anonymous"></script>
+    <style>
+        body,
+        html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="px-4 py-12">
+        <div class="flex justify-center flex-col items-center">
+            <img src="./assets/logo.svg" />
+            <h1 class="mt-4 text-2xl font-thin tracking-[0.3em]">NIELDEBAMBOLINA</h1>
+        </div>
+        <div class="py-12">
+            <video autoplay muted loop id="bg-video">
+                <source src="https://ik.imagekit.io/odmrlqt7e/0530.mp4" type="video/mp4" />
+                <!-- Optional: Add WebM and Ogg formats -->
+                <!-- <source src="video.webm" type="video/webm"> -->
+                <!-- <source src="video.ogv" type="video/ogg"> -->
+                Your browser does not support HTML5 video.
+            </video>
+        </div>
+    </div>
+</body>
+
+</html>
